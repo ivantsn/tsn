@@ -7,7 +7,7 @@ import { theme } from '../theme/theme';
 import 'typeface-fredoka-one';
 import 'typeface-ibm-plex-serif';
 
-import { Header } from './header';
+import { Header } from './Header/Header';
 
 const Layout = ({ children }) => {
   return (
@@ -30,7 +30,34 @@ const Layout = ({ children }) => {
             margin: 0;
             background-color: ${theme.colors.background};
             font-size: 1.8rem;
+            font-weight: ${theme.fontWeights.body};
             line-height: ${theme.lineHeights.body};
+          }
+
+          a {
+            font-weight: ${theme.fontWeights.links};
+            text-decoration: none;
+            color: ${theme.colors.accent};
+          }
+
+          h1,
+          h2,
+          h3 {
+            font-family: ${theme.fonts.headings};
+            font-weight: ${theme.fontWeights.heading};
+            line-height: ${theme.lineHeights.heading};
+          }
+
+          h1 {
+            margin-top: ${theme.sizes.sm[0]}px;
+            margin-bottom: ${theme.sizes.sm[1]}px;
+            font-size: 7.6rem;
+          }
+          h2 {
+            font-size: 4.3rem;
+          }
+          h3 {
+            font-size: 2.4rem;
           }
         `}
       />

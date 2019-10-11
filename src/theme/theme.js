@@ -13,5 +13,14 @@ export const theme = {
     body: 1.5,
     heading: 1.2,
   },
-  spaces: [0, 8, 16, 32, 64, 128, 256, 512],
+  fontWeights: {
+    heading: 400,
+    body: 500,
+    links: 600,
+  },
+  sizes: {
+    sm: [0, 8, 16, 24],
+    md: [32, 40, 56, 64],
+    lg: [128, 176, 256, 512],
+  },
 };
