@@ -36,8 +36,8 @@ export const Container = styled(animated.header)`
     align-items: center;
     justify-content: space-between;
 
-    width: 100%;
-    max-width: 860px;
+    width: 90%;
+    max-width: ${({ theme }) => theme.maxWidth}px;
     padding: ${({ theme }) => theme.sizes.sm[2]}px
       ${({ theme }) => theme.sizes.md[0]}px;
 

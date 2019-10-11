@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Global, css } from '@emotion/core';
 import { ThemeProvider } from 'emotion-theming';
-import { theme } from '../theme/theme';
+
 import 'typeface-fredoka-one';
 import 'typeface-ibm-plex-serif';
 
-import { Header } from './Header/Header';
+import { theme } from '../../theme/theme';
+import { Content } from './elements';
+import { Header } from '../Header/Header';
 
 const Layout = ({ children }) => {
   return (
@@ -27,7 +28,11 @@ const Layout = ({ children }) => {
           }
 
           body {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
             margin: 0;
+            padding: 0 5%;
             background-color: ${theme.colors.background};
             font-size: 1.8rem;
             font-weight: ${theme.fontWeights.body};
@@ -62,7 +67,7 @@ const Layout = ({ children }) => {
         `}
       />
       <Header />
-      <main>{children}</main>
+      <Content>{children}</Content>
     </ThemeProvider>
   );
 };

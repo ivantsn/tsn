@@ -12,7 +12,7 @@ export const Header = () => {
       ? `translateX(0) rotate(0)`
       : `translateX(200%) rotate(90deg)`,
   });
-  //
+
   const nav = [
     {
       href: '/',
