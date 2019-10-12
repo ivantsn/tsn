@@ -51,6 +51,7 @@ const Layout = ({ children }) => {
           }
 
           h1 {
+            margin-bottom: 1.6rem;
             font-size: 7.6rem;
           }
           h2 {
@@ -58,6 +59,11 @@ const Layout = ({ children }) => {
           }
           h3 {
             font-size: 2.4rem;
+          }
+
+          p {
+            margin-top: 0;
+            margin-bottom: 1.6rem;
           }
         `}
       />
