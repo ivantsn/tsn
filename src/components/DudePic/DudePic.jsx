@@ -2,11 +2,11 @@ import React from 'react';
 import { css, keyframes } from '@emotion/core';
 
 const flicker = keyframes`
-  0% { opacity: 0.8 }
+  0% { opacity: 0.9 }
   20% { opacity: 0.4 }
-  40% { opacity: 0.8 }
+  40% { opacity: 0.9 }
   80% { opacity: 0.4 }
-  100% { opacity: 0.8 }
+  100% { opacity: 0.9 }
 `;
 
 export const DudePic = () => {
@@ -16,6 +16,7 @@ export const DudePic = () => {
         position: relative;
         display: none;
         margin: 0;
+        padding-left: 3.2rem;
 
         @media (min-width: 760px) {
           display: block;
@@ -28,13 +29,10 @@ export const DudePic = () => {
           position: absolute;
           top: 13%;
           right: 1%;
-          animation: ${flicker} 4s ease-in-out infinite;
+          animation: ${flicker} 4s ease-out infinite;
         `}
       />
       <img
-        css={css`
-          padding-left: 3.2rem;
-        `}
         src="/images/svg/dude.svg"
         alt="Drawing of a dude sitting at a computer"
       />
