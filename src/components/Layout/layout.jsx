@@ -7,8 +7,8 @@ import 'typeface-fredoka-one';
 import 'typeface-ibm-plex-serif';
 
 import { theme } from '../../theme/theme';
-import { Content } from './elements';
 import { Header } from '../Header/Header';
+import { Content } from './elements';
 
 const Layout = ({ children }) => {
   return (
