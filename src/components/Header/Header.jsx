@@ -48,14 +48,14 @@ export const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/icons/github.svg" alt="GitHub"></img>
+            <img src="/images/svg/icons/github.svg" alt="GitHub"></img>
           </a>
           <a
             href="https://twitter.com/ivan_tusnolobov"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/icons/twitter.svg" alt="Twitter"></img>
+            <img src="/images/svg/icons/twitter.svg" alt="Twitter"></img>
           </a>
         </Social>
       </Container>

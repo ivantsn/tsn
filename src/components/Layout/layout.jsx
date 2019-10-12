@@ -22,40 +22,35 @@ const Layout = ({ children }) => {
           }
 
           html {
-            font-family: ${theme.fonts.body};
+            font-family: ${theme.fonts.serif};
             font-size: 10px;
-            color: ${theme.colors.body};
+            color: ${theme.colors.lightBlue};
           }
 
           body {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
             margin: 0;
-            padding: 0 5%;
-            background-color: ${theme.colors.background};
+            background-color: ${theme.colors.darkBlue};
             font-size: 1.8rem;
-            font-weight: ${theme.fontWeights.body};
-            line-height: ${theme.lineHeights.body};
+            font-weight: ${theme.fontWeights.text};
+            line-height: ${theme.lineHeights.text};
           }
 
           a {
             font-weight: ${theme.fontWeights.links};
+            color: ${theme.colors.pleasantYellow};
             text-decoration: none;
-            color: ${theme.colors.accent};
           }
 
           h1,
           h2,
           h3 {
-            font-family: ${theme.fonts.headings};
+            margin: 0;
+            font-family: ${theme.fonts.sans};
             font-weight: ${theme.fontWeights.heading};
             line-height: ${theme.lineHeights.heading};
           }
 
           h1 {
-            margin-top: ${theme.sizes.sm[0]}px;
-            margin-bottom: ${theme.sizes.sm[1]}px;
             font-size: 7.6rem;
           }
           h2 {
