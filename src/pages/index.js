@@ -1,7 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
-import SEO from '../components/seo';
 import { css } from '@emotion/core';
+
+import SEO from '../components/seo';
+import { Layout } from '../components/Layout/Layout';
+import { DudePic } from '../components/DudePic/DudePic';
 
 const IndexPage = () => (
   <Layout>
@@ -13,18 +15,7 @@ const IndexPage = () => (
           justify-content: center;
         `}
       >
-        <img
-          src="/images/svg/dude.svg"
-          alt="Dude"
-          css={css`
-            display: none;
-            width: 100%;
-            max-width: 40rem;
-            @media (min-width: 760px) {
-              display: block;
-            }
-          `}
-        />
+        <DudePic />
         <section
           css={css`
             max-width: 57rem;

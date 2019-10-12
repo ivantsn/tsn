@@ -10,7 +10,7 @@ import { theme } from '../../theme/theme';
 import { Header } from '../Header/Header';
 import { Content } from './elements';
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Global
@@ -76,5 +76,3 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Layout;
