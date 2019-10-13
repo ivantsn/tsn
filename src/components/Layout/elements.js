@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.main`
+export const FullWidth = styled.div`
   display: grid;
   grid-template-columns:
     1fr
@@ -9,9 +9,16 @@ export const Container = styled.main`
   grid-template-rows: 24rem 1fr;
   gap: 1.6rem;
 
-  @media (${({ theme }) => theme.breakPoints.large.query}) {
-    grid-template-rows: 32rem 1fr;
+  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+    grid-template-rows: 28rem 1fr;
   }
+`;
+
+export const Content = styled.main`
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  gap: 3.2rem;
+  grid-column: 2/3;
 `;
 
 export const Logos = styled.div`
@@ -22,7 +29,7 @@ export const Logos = styled.div`
   background-image: url(/images/svg/logos/react.svg),
     url(/images/svg/logos/node.svg), url(/images/svg/logos/js.svg);
 
-  background-position: 0% 100%, 50% -200%, 100% 100%;
+  background-position: 0% 100%, 50% -9rem, 100% 100%;
   background-repeat: no-repeat;
 
   @media (${({ theme }) => theme.breakPoints.small.query}) {
@@ -32,7 +39,7 @@ export const Logos = styled.div`
     background-position: 0% 100%, 35% -200%, 60% 100%, 100% 200%;
   }
 
-  @media (${({ theme }) => theme.breakPoints.large.query}) {
+  @media (${({ theme }) => theme.breakPoints.medium.query}) {
     background-position: 0% 100%, 35% 0%, 60% 100%, 100% 0%;
   }
 `;

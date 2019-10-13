@@ -36,7 +36,9 @@ export const Header = () => {
   return (
     <>
       <Container
-        style={windowSize.width < theme.breakPoints.large.number ? slideIn : {}}
+        style={
+          windowSize.width < theme.breakPoints.medium.number ? slideIn : {}
+        }
       >
         <Nav>
           {nav.map(({ href, label }) => (

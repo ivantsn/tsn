@@ -26,7 +26,7 @@ export const Container = styled(animated.header)`
     }
   }
 
-  @media (${({ theme }) => theme.breakPoints.large.query}) {
+  @media (${({ theme }) => theme.breakPoints.medium.query}) {
     left: 50%;
     top: 2.4rem;
     bottom: unset;
@@ -75,7 +75,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (${({ theme }) => theme.breakPoints.large.query}) {
+  @media (${({ theme }) => theme.breakPoints.medium.query}) {
     margin-bottom: 0;
 
     & a {
@@ -126,7 +126,7 @@ export const Button = styled.button`
     border: 0;
   }
 
-  @media (${({ theme }) => theme.breakPoints.large.query}) {
+  @media (${({ theme }) => theme.breakPoints.medium.query}) {
     display: none;
   }
 `;

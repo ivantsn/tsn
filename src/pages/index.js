@@ -8,39 +8,31 @@ import { DudePic } from '../components/DudePic/DudePic';
 const IndexPage = () => (
   <Layout>
     <SEO />
-    <article
-      css={css`
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-        gap: 3.2rem;
-        grid-column: 2/3;
+
+    <DudePic />
+    <section
+      css={theme => css`
+        grid-column: 1/5;
+        align-self: center;
+        background-image: url(/images/svg/figures/figures.svg);
+        background-repeat: no-repeat;
+
+        @media (${theme.breakPoints.medium.query}) {
+          grid-column: 3/5;
+        }
       `}
     >
-      <DudePic />
-      <section
-        css={theme => css`
-          grid-column: 1/5;
+      <h1>Hello</h1>
+      <p>
+        My name is Ivan and I’m a disigner and frontend developer based in
+        Moscow.
+      </p>
+      <p>Interested in working together? Reach me at</p>
 
-          background-image: url(/images/svg/figures/figures.svg);
-          background-repeat: no-repeat;
-
-          @media (${theme.breakPoints.large.query}) {
-            grid-column: 3/5;
-          }
-        `}
-      >
-        <h1>Hello</h1>
-        <p>
-          My name is Ivan and I’m a disigner and frontend developer based in
-          Moscow.
-        </p>
-        <p>Interested in working together? Reach me at</p>
-
-        <a href="mailto:ivan.tusnolobov[at]gmail.com">
-          ivan.tusnolobov[at]gmail.com
-        </a>
-      </section>
-    </article>
+      <a href="mailto:ivan.tusnolobov[at]gmail.com">
+        ivan.tusnolobov[at]gmail.com
+      </a>
+    </section>
   </Layout>
 );
 

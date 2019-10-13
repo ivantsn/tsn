@@ -5,8 +5,8 @@ export const theme = {
       query: 'min-width: 390px',
     },
     medium: {
-      number: 600,
-      query: 'min-width: 600px',
+      number: 700,
+      query: 'min-width: 700px',
     },
     large: {
       number: 950,

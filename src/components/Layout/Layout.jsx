@@ -8,7 +8,7 @@ import 'typeface-ibm-plex-serif';
 
 import { theme } from '../../theme/theme';
 import { Header } from '../Header/Header';
-import { Container, Logos } from './elements';
+import { FullWidth, Content, Logos } from './elements';
 
 export const Layout = ({ children }) => {
   return (
@@ -72,10 +72,10 @@ export const Layout = ({ children }) => {
         `}
       />
       <Header />
-      <Container>
+      <FullWidth>
         <Logos />
-        {children}
-      </Container>
+        <Content>{children}</Content>
+      </FullWidth>
     </ThemeProvider>
   );
 };

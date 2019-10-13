@@ -13,15 +13,15 @@ export const DudePic = () => {
   return (
     <picture
       css={theme => css`
-        grid-column: 1/4;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin: 0;
+        grid-column: 1/3;
+        display: none;
 
         @media (${theme.breakPoints.medium.query}) {
-          grid-column: 1/3;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          margin: 0;
+          /* grid-column: 1/3; */
         }
       `}
     >
