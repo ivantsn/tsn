@@ -8,7 +8,7 @@ import 'typeface-ibm-plex-serif';
 
 import { theme } from '../../theme/theme';
 import { Header } from '../Header/Header';
-import { Content } from './elements';
+import { Container, Logos } from './elements';
 
 export const Layout = ({ children }) => {
   return (
@@ -39,6 +39,10 @@ export const Layout = ({ children }) => {
             font-weight: ${theme.fontWeights.links};
             color: ${theme.colors.pleasantYellow};
             text-decoration: none;
+
+            &:hover {
+              opacity: 0.8;
+            }
           }
 
           h1,
@@ -68,7 +72,10 @@ export const Layout = ({ children }) => {
         `}
       />
       <Header />
-      <Content>{children}</Content>
+      <Container>
+        <Logos />
+        {children}
+      </Container>
     </ThemeProvider>
   );
 };

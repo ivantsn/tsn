@@ -1,40 +1,46 @@
 import React from 'react';
 import { css } from '@emotion/core';
 
-import SEO from '../components/seo';
+import { SEO } from '../components/Seo/Seo';
 import { Layout } from '../components/Layout/Layout';
 import { DudePic } from '../components/DudePic/DudePic';
 
 const IndexPage = () => (
   <Layout>
     <SEO />
-    <article>
-      <div
+    <article
+      css={css`
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        gap: 3.2rem;
+        grid-column: 2/3;
+      `}
+    >
+      <DudePic />
+      <section
         css={css`
-          display: flex;
-          justify-content: center;
+          grid-column: 1/5;
+
+          background-image: url(/images/svg/figures/figures.svg);
+          background-repeat: no-repeat;
+          /* background-position: 10% 0; */
+
+          @media (min-width: 840px) {
+            grid-column: 3/5;
+          }
         `}
       >
-        <DudePic />
-        <section
-          css={css`
-            max-width: 57rem;
-            padding: 0 3.2rem;
-            background-image: url(/images/svg/figures.svg);
-            background-repeat: no-repeat;
-          `}
-        >
-          <h1>Hello</h1>
-          <p>
-            My name is Ivan and I’m a disigner and frontend developer based in
-            Moscow.
-          </p>
-          <p>Interested in working together? Reach me at</p>
-          <a href="mailto:ivan.tusnolobov[at]gmail.com">
-            ivan.tusnolobov[at]gmail.com
-          </a>
-        </section>
-      </div>
+        <h1>Hello</h1>
+        <p>
+          My name is Ivan and I’m a disigner and frontend developer based in
+          Moscow.
+        </p>
+        <p>Interested in working together? Reach me at</p>
+
+        <a href="mailto:ivan.tusnolobov[at]gmail.com">
+          ivan.tusnolobov[at]gmail.com
+        </a>
+      </section>
     </article>
   </Layout>
 );
