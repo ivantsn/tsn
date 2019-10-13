@@ -26,7 +26,7 @@ export const Container = styled(animated.header)`
     }
   }
 
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+  @media (${({ theme }) => theme.breakPoints.large.query}) {
     left: 50%;
     top: 2.4rem;
     bottom: unset;
@@ -37,7 +37,7 @@ export const Container = styled(animated.header)`
     justify-content: space-between;
 
     width: calc(100% - 1.6rem);
-    max-width: ${({ theme }) => theme.breakPoints.medium.number}px;
+    max-width: ${({ theme }) => theme.breakPoints.large.number}px;
     padding: 1.6rem 3.2rem;
 
     transform: translateX(-50%);
@@ -75,7 +75,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+  @media (${({ theme }) => theme.breakPoints.large.query}) {
     margin-bottom: 0;
 
     & a {
@@ -126,7 +126,7 @@ export const Button = styled.button`
     border: 0;
   }
 
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+  @media (${({ theme }) => theme.breakPoints.large.query}) {
     display: none;
   }
 `;

@@ -4,12 +4,12 @@ export const Container = styled.main`
   display: grid;
   grid-template-columns:
     1fr
-    minmax(min-content, ${({ theme }) => theme.breakPoints.medium.number}px)
+    minmax(min-content, ${({ theme }) => theme.breakPoints.large.number}px)
     1fr;
   grid-template-rows: 24rem 1fr;
   gap: 1.6rem;
 
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+  @media (${({ theme }) => theme.breakPoints.large.query}) {
     grid-template-rows: 32rem 1fr;
   }
 `;
@@ -32,7 +32,7 @@ export const Logos = styled.div`
     background-position: 0% 100%, 35% -200%, 60% 100%, 100% 200%;
   }
 
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+  @media (${({ theme }) => theme.breakPoints.large.query}) {
     background-position: 0% 100%, 35% 0%, 60% 100%, 100% 0%;
   }
 `;

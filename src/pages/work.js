@@ -22,7 +22,7 @@ const WorkPage = () => (
 
           background-image: url(/images/svg/figures/figures.svg);
           background-repeat: no-repeat;
-          @media (${theme.breakPoints.medium.query}) {
+          @media (${theme.breakPoints.large.query}) {
             grid-column: 2/4;
           }
         `}
@@ -40,7 +40,7 @@ const WorkPage = () => (
 
           background-image: url(/images/svg/figures/figures.svg);
           background-repeat: no-repeat;
-          @media (${theme.breakPoints.medium.query}) {
+          @media (${theme.breakPoints.large.query}) {
             grid-column: 2/4;
           }
         `}

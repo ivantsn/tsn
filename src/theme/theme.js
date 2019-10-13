@@ -5,8 +5,12 @@ export const theme = {
       query: 'min-width: 390px',
     },
     medium: {
-      number: 860,
-      query: 'min-width: 860px',
+      number: 600,
+      query: 'min-width: 600px',
+    },
+    large: {
+      number: 950,
+      query: 'min-width: 950px',
     },
   },
   colors: {
