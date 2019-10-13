@@ -26,7 +26,7 @@ export const Container = styled(animated.header)`
     }
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 840px) {
     left: 50%;
     top: 2.4rem;
     bottom: unset;
@@ -75,7 +75,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 840px) {
     margin-bottom: 0;
 
     & a {
@@ -126,7 +126,7 @@ export const Button = styled.button`
     border: 0;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 840px) {
     display: none;
   }
 `;
