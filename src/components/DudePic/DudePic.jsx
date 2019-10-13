@@ -2,11 +2,11 @@ import React from 'react';
 import { css, keyframes } from '@emotion/core';
 
 const flicker = keyframes`
-  0% { opacity: 0.9 }
-  20% { opacity: 0.4 }
-  40% { opacity: 0.9 }
-  80% { opacity: 0.4 }
-  100% { opacity: 0.9 }
+  0% { opacity: 0.1 }
+  20% { opacity: 1 }
+  40% { opacity: 0.5 }
+  80% { opacity: 1 }
+  100% { opacity: 0.1 }
 `;
 
 export const DudePic = () => {
@@ -21,7 +21,6 @@ export const DudePic = () => {
           grid-template-columns: 1fr;
           grid-template-rows: 1fr;
           margin: 0;
-          /* grid-column: 1/3; */
         }
       `}
     >
@@ -44,7 +43,7 @@ export const DudePic = () => {
           grid-column: 1/2;
           grid-row: 1/2;
 
-          animation: ${flicker} 3s ease-out infinite;
+          animation: ${flicker} 8s ease infinite;
         `}
       />
     </picture>
