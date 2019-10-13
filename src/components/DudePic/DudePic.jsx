@@ -1,5 +1,6 @@
 import React from 'react';
 import { css, keyframes } from '@emotion/core';
+// import styled from '@emotion/styled';
 
 const flicker = keyframes`
   0% { opacity: 0.9 }
@@ -11,31 +12,41 @@ const flicker = keyframes`
 
 export const DudePic = () => {
   return (
-    <figure
+    <picture
       css={css`
-        position: relative;
-        display: none;
-        margin: 0;
-        padding-left: 3.2rem;
+        grid-column: 1/3;
 
-        @media (min-width: 760px) {
-          display: block;
+        display: none;
+        @media (min-width: 840px) {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          margin: 0;
         }
       `}
     >
       <img
-        src="/images/svg/laptop-light.svg"
         css={css`
-          position: absolute;
-          top: 13%;
-          right: 1%;
-          animation: ${flicker} 4s ease-out infinite;
+          width: 100%;
+          grid-column: 1/2;
+          grid-row: 1/2;
         `}
-      />
-      <img
         src="/images/svg/dude.svg"
         alt="Drawing of a dude sitting at a computer"
       />
-    </figure>
+
+      <img
+        src="/images/svg/laptop-light.svg"
+        alt="Laptop's screen is flickering"
+        css={css`
+          position: relative;
+          width: 100%;
+          grid-column: 1/2;
+          grid-row: 1/2;
+
+          animation: ${flicker} 3s ease-out infinite;
+        `}
+      />
+    </picture>
   );
 };
