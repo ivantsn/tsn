@@ -16,7 +16,7 @@ export const Header = () => {
   const nav = [
     {
       href: '/',
-      label: 'Home',
+      label: 'About',
     },
     {
       href: '/work/',
@@ -34,7 +34,7 @@ export const Header = () => {
 
   return (
     <>
-      <Container style={windowSize.width < 600 ? slideIn : {}}>
+      <Container style={windowSize.width < 840 ? slideIn : {}}>
         <Nav>
           {nav.map(({ href, label }) => (
             <Link to={href} key={label} activeClassName="active">
