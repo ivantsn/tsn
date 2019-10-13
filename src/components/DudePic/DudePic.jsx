@@ -1,6 +1,5 @@
 import React from 'react';
 import { css, keyframes } from '@emotion/core';
-// import styled from '@emotion/styled';
 
 const flicker = keyframes`
   0% { opacity: 0.9 }
@@ -13,11 +12,11 @@ const flicker = keyframes`
 export const DudePic = () => {
   return (
     <picture
-      css={css`
+      css={theme => css`
         grid-column: 1/3;
 
         display: none;
-        @media (min-width: 840px) {
+        @media (${theme.breakPoints.medium.query}) {
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows: 1fr;

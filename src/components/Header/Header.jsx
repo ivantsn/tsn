@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import { useSpring } from 'react-spring';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { Container, Nav, Social, Button } from './elements';
+import { theme } from '../../theme/theme';
 
 export const Header = () => {
   const [isMenuShown, setShowMenu] = useState(false);
@@ -34,7 +35,11 @@ export const Header = () => {
 
   return (
     <>
-      <Container style={windowSize.width < 840 ? slideIn : {}}>
+      <Container
+        style={
+          windowSize.width < theme.breakPoints.medium.number ? slideIn : {}
+        }
+      >
         <Nav>
           {nav.map(({ href, label }) => (
             <Link to={href} key={label} activeClassName="active">

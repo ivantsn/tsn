@@ -1,6 +1,14 @@
 export const theme = {
-  maxWidth: 860,
-  contentWidth: 572,
+  breakPoints: {
+    small: {
+      number: 390,
+      query: 'min-width: 390px',
+    },
+    medium: {
+      number: 860,
+      query: 'min-width: 860px',
+    },
+  },
   colors: {
     darkBlue: '#263368',
     lightBlue: '#b4c6ee',

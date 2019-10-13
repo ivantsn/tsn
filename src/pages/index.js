@@ -18,14 +18,13 @@ const IndexPage = () => (
     >
       <DudePic />
       <section
-        css={css`
+        css={theme => css`
           grid-column: 1/5;
 
           background-image: url(/images/svg/figures/figures.svg);
           background-repeat: no-repeat;
-          /* background-position: 10% 0; */
 
-          @media (min-width: 840px) {
+          @media (${theme.breakPoints.medium.query}) {
             grid-column: 3/5;
           }
         `}
