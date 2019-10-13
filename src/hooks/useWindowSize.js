@@ -20,9 +20,9 @@ export const useWindowSize = () => {
     const handleResize = () => {
       setWindowSize(getSize());
     };
-
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+    // eslint-disable-next-line
   }, []);
 
   return windowSize;

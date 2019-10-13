@@ -1,24 +1,31 @@
 import styled from '@emotion/styled';
 
-export const FullWidth = styled.div`
+export const Centered = styled.div`
+  grid-row: 1/2;
+
   display: grid;
   grid-template-columns:
     1fr
     minmax(min-content, ${({ theme }) => theme.breakPoints.large.number}px)
     1fr;
-  grid-template-rows: 24rem 1fr;
+  grid-template-rows: 24rem 1fr auto;
   gap: 1.6rem;
+  height: 100vh;
 
   @media (${({ theme }) => theme.breakPoints.medium.query}) {
-    grid-template-rows: 28rem 1fr;
+    grid-template-rows: 28rem 1fr auto;
   }
 `;
 
 export const Content = styled.main`
+  grid-column: 2/3;
+  grid-row: 2/3;
+
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   gap: 3.2rem;
-  grid-column: 2/3;
+
+  align-content: flex-start;
 `;
 
 export const Logos = styled.div`
