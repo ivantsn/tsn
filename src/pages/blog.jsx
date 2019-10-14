@@ -1,33 +1,31 @@
 import React from 'react';
-import { css } from '@emotion/core';
 
-import { Layout } from '../components/Layout/Layout';
-import { PostPreview } from '../components/PostPreview/PostPreview';
 import { usePosts } from '../hooks/usePosts';
+import { Layout } from '../components/Layout/Layout';
+import { PostPreview } from '../components/PostPreview/post-preview';
+
+import { Container } from '../page-styles/blog.styles';
 
 const BlogPage = () => {
-  const posts = usePosts().reverse();
+  const posts = usePosts();
   return (
     <Layout>
-      <section
-        css={theme => css`
-          grid-column: 1/5;
-
-          @media (${theme.breakPoints.medium.query}) {
-            grid-column: 2/4;
-          }
-        `}
-      >
-        <h1>hi</h1>
+      <Container>
+        <h1>Blog</h1>
+        <p>This is my blog.</p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio,
-          quisquam. Id, ducimus. Quis laborum cum aspernatur veniam non. Sunt,
-          quis?
+          Well, not exactly. I&nbsp;really want to&nbsp;start to&nbsp;write
+          something useful and enjoyable to&nbsp;read. Writing skill
+          doesn&rsquo;t level up&nbsp;by&nbsp;itself. But for now, I&nbsp;did
+          this blog structure as&nbsp;a&nbsp;reminder to&nbsp;me&nbsp;how lazy
+          I&nbsp;am.
         </p>
-      </section>
-      {posts.map(post => (
-        <PostPreview key={post.slug} post={post} />
-      ))}
+      </Container>
+      <Container>
+        {posts.map(post => (
+          <PostPreview key={post.slug} post={post} />
+        ))}
+      </Container>
     </Layout>
   );
 };
