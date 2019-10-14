@@ -14,7 +14,7 @@ export const PostPreview = ({
           <h2>{title}</h2>
         </Link>
         <Metadata>
-          {formatDate(date)} | {timeToRead} mins to read
+          {formatDate(date)} | {timeToRead} min to read
         </Metadata>
       </Header>
       <p>{spoiler}</p>
