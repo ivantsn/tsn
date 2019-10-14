@@ -14,8 +14,8 @@ export const theme = {
     },
   },
   colors: {
-    darkBlue: '#263368',
-    lightBlue: '#b4c6ee',
+    darkBlue: '#232E5D',
+    lightBlue: '#BACCF7',
     pleasantYellow: '#f2da79',
   },
   fonts: {
