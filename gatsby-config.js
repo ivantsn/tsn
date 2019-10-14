@@ -23,8 +23,14 @@ module.exports = {
         defaultLayouts: {
           blog: require.resolve('./src/components/Layout/layout.jsx'),
         },
-        gatsbyRemarkPlugins: ['gatsby-remark-images'],
-        plugins: ['gatsby-remark-images'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+          },
+        ],
       },
     },
     {
