@@ -29,7 +29,11 @@ const IndexPage = () => (
       </p>
       <p>Interested in working together? Reach me at</p>
 
-      <a href="mailto:ivan.tusnolobov[at]gmail.com">
+      <a
+        href="mailto:ivan.tusnolobov@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         ivan.tusnolobov[at]gmail.com
       </a>
     </section>
