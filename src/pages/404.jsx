@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Layout } from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/layout';
 import { SEO } from '../components/Seo/Seo';
 
 const NotFoundPage = () => {

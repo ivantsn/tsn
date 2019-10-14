@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { usePosts } from '../hooks/usePosts';
-import { Layout } from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/layout';
 import { PostPreview } from '../components/PostPreview/post-preview';
 
 import { Container } from '../page-styles/blog.styles';

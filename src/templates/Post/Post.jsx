@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { css } from '@emotion/core';
 
 import { formatDate } from '../../utils/helpers';
-import { Layout } from '../../components/Layout/Layout';
+import { Layout } from '../../components/Layout/layout';
 
 export const query = graphql`
   query($slug: String!) {

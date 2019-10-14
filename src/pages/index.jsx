@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 
 import { SEO } from '../components/Seo/Seo';
-import { Layout } from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/layout';
 import { DudePic } from '../components/DudePic/DudePic';
 
 const IndexPage = () => (
