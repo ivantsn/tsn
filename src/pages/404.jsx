@@ -23,6 +23,7 @@ const NotFoundPage = () => (
     </section>{' '}
     <img
       src="/images/astronaut.png"
+      alt="Astronaut lost in space"
       css={theme => css`
         grid-column: 1/4;
         width: 100%;
