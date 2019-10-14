@@ -10,6 +10,7 @@ export const usePosts = () => {
             slug
             description
           }
+          timeToRead
         }
       }
     }
