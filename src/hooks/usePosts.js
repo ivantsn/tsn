@@ -2,15 +2,16 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 export const usePosts = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allMdx {
         nodes {
+          timeToRead
           frontmatter {
             title
             slug
-            description
+            spoiler
+            date
           }
-          timeToRead
         }
       }
     }
@@ -19,7 +20,8 @@ export const usePosts = () => {
   return data.allMdx.nodes.map(post => ({
     title: post.frontmatter.title,
     slug: post.frontmatter.slug,
-    description: post.frontmatter.description,
+    date: post.frontmatter.date,
+    spoiler: post.frontmatter.spoiler,
     timeToRead: post.timeToRead,
   }));
 };
