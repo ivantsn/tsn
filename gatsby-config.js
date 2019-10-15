@@ -16,6 +16,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-emotion',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-json',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-mdx',
@@ -37,7 +38,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
@@ -45,6 +46,13 @@ module.exports = {
       options: {
         name: 'blog',
         path: `${__dirname}/content/blog/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'portfolio',
+        path: `${__dirname}/content/portfolio/`,
       },
     },
     {

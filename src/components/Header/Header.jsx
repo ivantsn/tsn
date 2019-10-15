@@ -20,8 +20,8 @@ export const Header = () => {
       label: 'About',
     },
     {
-      href: '/work/',
-      label: 'Work',
+      href: '/portfolio/',
+      label: 'Portfolio',
     },
     {
       href: '/blog/',

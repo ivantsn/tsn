@@ -1,0 +1,8 @@
+{
+  "title": "Genit",
+  "role": "Design & Development",
+  "preview": "./images/genit/preview.svg",
+  "description": "Password generator built with Vanilla JS",
+  "link": "https://genit.netlify.com/",
+  "linkText": "Take a look"
+}
