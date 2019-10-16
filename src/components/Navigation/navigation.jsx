@@ -43,7 +43,10 @@ export const Navigation = () => {
           })}
         </Social>
       </Container>
-      <Button onClick={() => setShowMenu(!isMenuShown)} />
+      <Button
+        onClick={() => setShowMenu(!isMenuShown)}
+        title="Toggle Navigation"
+      />
     </>
   );
 };
