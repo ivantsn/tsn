@@ -1,12 +1,12 @@
 export const theme = {
   breakPoints: {
     small: {
-      number: 390,
-      query: 'min-width: 390px',
+      number: 415,
+      query: 'min-width: 415px',
     },
     medium: {
-      number: 700,
-      query: 'min-width: 700px',
+      number: 760,
+      query: 'min-width: 760px',
     },
     large: {
       number: 950,
@@ -17,6 +17,7 @@ export const theme = {
     darkBlue: '#232E5D',
     lightBlue: '#BACCF7',
     pleasantYellow: '#f2da79',
+    pleasantYellowShadow: '#ccb866',
   },
   fonts: {
     sans: 'Fredoka One',
@@ -24,8 +25,8 @@ export const theme = {
     monospace: 'monospace',
   },
   lineHeights: {
-    text: 1.5,
-    heading: 1.2,
+    text: 1.45,
+    heading: 1.15,
   },
   fontWeights: {
     heading: 400,

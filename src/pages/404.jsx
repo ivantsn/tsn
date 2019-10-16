@@ -1,10 +1,11 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Layout } from '../components/Layout/layout';
 import { SEO } from '../components/Seo/Seo';
+
+import { Container, Header, StyledImage } from '../page-styles/404.styles';
 
 const NotFoundPage = () => {
   const astronautQuery = useStaticQuery(graphql`
@@ -22,32 +23,17 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <section
-        css={theme => css`
-          grid-column: 1/5;
-
-          background-image: url(/images/svg/figures/figures.svg);
-          background-repeat: no-repeat;
-          @media (${theme.breakPoints.medium.query}) {
-            grid-column: 2/5;
-          }
-        `}
-      >
-        <h1>This Page is Lost in Space</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </section>{' '}
-      <Img
-        fluid={astronautQuery.file.sharp.fluid}
-        fadeIn
-        alt="Astronaut lost in space"
-        css={theme => css`
-          grid-column: 1/4;
-          width: 100%;
-          @media (${theme.breakPoints.medium.query}) {
-            grid-column: 1/3;
-          }
-        `}
-      />
+      <Container>
+        <Header>
+          <h1>This Page is Lost in Space</h1>
+          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        </Header>
+        <StyledImage
+          fluid={astronautQuery.file.sharp.fluid}
+          fadeIn
+          alt="Astronaut lost in space"
+        />
+      </Container>
     </Layout>
   );
 };

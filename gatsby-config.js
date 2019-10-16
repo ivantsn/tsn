@@ -27,10 +27,19 @@ module.exports = {
         gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
+            },
           },
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {
+              wrapperStyle: `margin-bottom: 1.6rem`,
+            },
           },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-smartypants',
         ],
       },
     },

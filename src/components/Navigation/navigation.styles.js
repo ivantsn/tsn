@@ -15,26 +15,33 @@ export const Container = styled(animated.header)`
   border-radius: 0.4rem;
   background-color: ${({ theme }) => theme.colors.pleasantYellow};
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  z-index: 9;
 
   @media (${({ theme }) => theme.breakPoints.medium.query}) {
-    left: 50%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    position: sticky;
     top: 2.4rem;
     bottom: unset;
     right: unset;
 
+    width: 100%;
+    height: 7.2rem;
+    margin-top: 2.4rem;
+    padding: 1.6rem 3.2rem;
+
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-
-    width: calc(100% - 3.2rem);
-    max-width: ${({ theme }) => theme.breakPoints.large.number}px;
-    padding: 1.6rem 3.2rem;
-
-    transform: translateX(-50%);
   }
 
   & a {
     color: ${({ theme }) => theme.colors.darkBlue};
+
+    &:hover:before {
+      display: none;
+    }
   }
 `;
 
@@ -49,7 +56,6 @@ export const Nav = styled.nav`
   }
 
   & a {
-    position: relative;
     margin-bottom: 1.6rem;
 
     &:last-child {
@@ -57,23 +63,7 @@ export const Nav = styled.nav`
     }
 
     &:after {
-      content: '';
-      position: absolute;
-      bottom: -0.3rem;
-      left: 0;
-
-      width: 100%;
-      height: 0.2rem;
-
       background-color: ${({ theme }) => theme.colors.darkBlue};
-
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.2s ease;
-    }
-
-    &:hover:after {
-      transform: scale(1);
     }
 
     @media (${({ theme }) => theme.breakPoints.medium.query}) {
@@ -105,6 +95,10 @@ export const Social = styled.nav`
   & a {
     margin-right: 1.6rem;
 
+    &:after {
+      background-color: transparent;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -129,6 +123,7 @@ export const Button = styled.button`
 
   box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  z-index: 9;
 
   &:active {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);

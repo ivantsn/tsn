@@ -1,6 +1,42 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
+// ---------------------
+// # PAGE CONTAINER
+// ---------------------
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr auto;
+
+  height: 100vh;
+  max-width: ${({ theme }) => theme.breakPoints.large.number}px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+`;
+
+// ---------------------
+// # CONTENT CONTAINER
+// ---------------------
+
+export const Content = styled.main`
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  min-width: 0;
+  padding-top: 24rem;
+  padding-bottom: calc(4rem + 5vw);
+
+  @media (${({ theme }) => theme.breakPoints.small.query}) {
+    padding-top: 32rem;
+  }
+`;
+
+// ---------------------
+// # GLOBAL STYLES
+// ---------------------
+
 export const GlobalStyles = theme => css`
   *,
   *::after,
@@ -11,100 +47,132 @@ export const GlobalStyles = theme => css`
   html {
     font-family: ${theme.fonts.serif};
     font-size: 10px;
+
     color: ${theme.colors.lightBlue};
   }
 
   body {
     margin: 0;
-    background-color: ${theme.colors.darkBlue};
-    font-size: 1.8rem;
+
+    font-size: 1.6rem;
     font-weight: ${theme.fontWeights.text};
     line-height: ${theme.lineHeights.text};
+    word-wrap: break-word;
+    font-kerning: normal;
+    font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+
+    background-color: ${theme.colors.darkBlue};
+
+    @media (${theme.breakPoints.small.query}) {
+      font-size: 1.8rem;
+    }
+    @media (${theme.breakPoints.medium.query}) {
+      font-size: 2rem;
+    }
   }
 
   a {
-    font-weight: ${theme.fontWeights.links};
-    color: ${theme.colors.pleasantYellow};
+    position: relative;
     text-decoration: none;
+    color: ${theme.colors.pleasantYellow};
 
-    &:hover {
-      opacity: 0.8;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+
+      height: 2px;
+      width: 100%;
+
+      border-radius: 2px;
+      background-color: ${theme.colors.pleasantYellow};
+
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
     }
   }
 
   h1,
   h2,
-  h3 {
-    margin: 0;
+  h3,
+  h4,
+  h5 {
+    margin: 2.75rem 0 1rem;
+
+    line-height: ${theme.lineHeights.heading};
     font-family: ${theme.fonts.sans};
     font-weight: ${theme.fontWeights.heading};
-    line-height: ${theme.lineHeights.heading};
   }
 
   h1 {
-    margin-bottom: 1.6rem;
-    font-size: 7.6rem;
+    margin-top: 0;
+    font-size: 3.052em;
   }
+
   h2 {
-    font-size: 4.3rem;
+    font-size: 2.441em;
   }
+
   h3 {
-    font-size: 2.4rem;
+    font-size: 1.953em;
+  }
+
+  h4 {
+    font-size: 1.563em;
+  }
+
+  h5 {
+    font-size: 1.25em;
   }
 
   p {
-    margin-top: 0;
-    margin-bottom: 1.6rem;
-  }
-`;
-
-export const Centered = styled.div`
-  grid-row: 1/2;
-
-  display: grid;
-  grid-template-columns:
-    1fr
-    minmax(min-content, ${({ theme }) => theme.breakPoints.large.number}px)
-    1fr;
-  grid-template-rows: 24rem 1fr auto;
-  gap: 1.6rem;
-  height: 100vh;
-
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
-    grid-template-rows: 28rem 1fr auto;
-  }
-`;
-
-export const Content = styled.main`
-  grid-column: 2/3;
-  grid-row: 2/3;
-
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  gap: 3.2rem;
-
-  align-content: flex-start;
-`;
-
-export const Logos = styled.div`
-  height: 100%;
-  grid-column: 2/3;
-  grid-row: 1/2;
-
-  background-image: url(/images/svg/logos/react.svg),
-    url(/images/svg/logos/node.svg), url(/images/svg/logos/js.svg);
-
-  background-position: 0% 100%, 50% -9rem, 100% 100%;
-  background-repeat: no-repeat;
-
-  @media (${({ theme }) => theme.breakPoints.small.query}) {
-    background-image: url(/images/svg/logos/react.svg),
-      url(/images/svg/logos/node.svg), url(/images/svg/logos/js.svg),
-      url(/images/svg/logos/gatsby.svg);
-    background-position: 0% 100%, 35% -200%, 60% 100%, 100% 200%;
+    margin-bottom: 1.25em;
+    &::selection {
+      color: ${theme.colors.darkBlue};
+      background: ${theme.colors.pleasantYellow};
+    }
   }
 
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
-    background-position: 0% 100%, 35% 0%, 60% 100%, 100% 0%;
+  small {
+    font-size: 0.75em;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0.4rem 3.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.4rem;
+  }
+
+  pre,
+  code {
+    border-radius: 0.4rem;
+  }
+
+  hr {
+    border: none;
+    border: 1px solid ${theme.colors.lightBlue};
+  }
+
+  .gatsby-highlight {
+    margin: 2.75rem 0 1rem;
+  }
+
+  ::selection {
+    color: ${theme.colors.darkBlue};
+    background: ${theme.colors.pleasantYellow};
+  }
+
+  .scroll-styled-h,
+  .scroll-styled-v,
+  html {
+    scrollbar-color: ${theme.colors.lightBlue} ${theme.colors.darkBlue};
+    scrollbar-width: thin;
   }
 `;
