@@ -2,12 +2,10 @@ import React from 'react';
 
 import {
   Container,
-  Header,
-  Title,
-  Role,
   Preview,
-  Description,
-  LinkStyled,
+  Info,
+  Title,
+  Meta,
 } from './project-preview.styles';
 
 export const ProjectPreview = ({
@@ -16,14 +14,14 @@ export const ProjectPreview = ({
   return (
     <Container>
       <Preview src={preview.publicURL} alt={`Preview of ${title} project`} />
-      <Header>
+      <Info>
         <Title>{title}</Title>
-        <Role>{`Role: ${role}`}</Role>
-      </Header>
-      <Description>{description}</Description>
-      <LinkStyled href={link} target="_blank" rel="noopener noreferrer">
-        {linkText}
-      </LinkStyled>
+        <Meta>{`Role: ${role}`}</Meta>
+        <p>{description}</p>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {linkText}
+        </a>
+      </Info>
     </Container>
   );
 };
