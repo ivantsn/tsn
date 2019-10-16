@@ -1,9 +1,12 @@
 import React from 'react';
-import { Container, ImageContainer } from '../page-styles/index.styles';
+
+import { SEO } from '../components/Seo/seo';
 import { Layout } from '../components/Layout/layout';
 
-const IndexPage = () => (
+import { Container, ImageContainer } from '../page-styles/index.styles';
+const IndexPage = ({ location }) => (
   <Layout>
+    <SEO slug={location.pathname} />
     <Container>
       <ImageContainer>
         <img

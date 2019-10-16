@@ -1,12 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ivan Tusnolobov | Web Developer & Designer',
+    title: 'Ivan Tusnolobov • Developer & Designer',
     author: 'Ivan Tusnolobov',
     description:
-      'Personal site of Ivan Tusnolobov. He builds things for the Web.',
+      'Ivan Tusnolobov is a developer and designer from Moscow, Russia',
     siteUrl: 'https://tusnolobov.com',
+    image: 'https://tusnolobov.com/images/og-image.jpg',
     social: {
       twitter: '@ivan_tusnolobov',
+      fbAppID: '',
+    },
+    organization: {
+      name: 'Ivan Tusnolobov',
+      url: 'https://tusnolobov.com',
+      logo: 'https://tusnolobov.com/android-chrome-512x512.png',
     },
   },
   plugins: [
@@ -41,6 +48,12 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-smartypants',
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-helmet-canonical-urls',
+      options: {
+        siteUrl: `https://tusnolobov.com`,
       },
     },
     {

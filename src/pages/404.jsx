@@ -2,11 +2,11 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { Layout } from '../components/Layout/layout';
-import { SEO } from '../components/Seo/Seo';
+import { SEO } from '../components/Seo/seo';
 
 import { Container, Header, StyledImage } from '../page-styles/404.styles';
 
-const NotFoundPage = () => {
+const NotFoundPage = ({ location }) => {
   const astronautQuery = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "astronaut.png" }) {
@@ -21,7 +21,7 @@ const NotFoundPage = () => {
 
   return (
     <Layout>
-      <SEO title="404: Not found" />
+      <SEO title="404: Not found" slug={location.pathname} />
       <Container>
         <Header>
           <h1>This Page is Lost in Space</h1>

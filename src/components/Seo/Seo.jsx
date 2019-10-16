@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 
-export const SEO = ({ description, lang, meta, title }) => {
+export const SEO = ({ description, lang, meta, title, slug, isPost }) => {
   const siteMetadata = useSiteMetadata();
 
   const metaDescription = description || siteMetadata.description;
+  const url = `${siteMetadata.siteUrl}${slug}`;
 
   return (
     <Helmet
@@ -14,8 +15,12 @@ export const SEO = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title || siteMetadata.title}
-      titleTemplate={`%s | ${siteMetadata.title}`}
+      titleTemplate={`%s • Ivan Tusnolobov`}
       meta={[
+        {
+          name: `image`,
+          content: siteMetadata.image,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -25,20 +30,36 @@ export const SEO = ({ description, lang, meta, title }) => {
           content: title,
         },
         {
+          property: `og:url`,
+          content: url,
+        },
+        {
+          property: `og:image`,
+          content: siteMetadata.image,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: isPost ? `article` : `website`,
+        },
+        {
+          property: `fb:app_id`,
+          content: siteMetadata.social.fbAppID,
         },
         {
           name: `twitter:card`,
           content: `summary`,
         },
         {
+          name: 'twitter:image',
+          content: siteMetadata.image,
+        },
+        {
           name: `twitter:creator`,
-          content: siteMetadata.author,
+          content: siteMetadata.social.twitter,
         },
         {
           name: `twitter:title`,
@@ -64,4 +85,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  slug: PropTypes.string,
+  isPost: PropTypes.bool,
 };

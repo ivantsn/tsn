@@ -3,13 +3,15 @@ import React from 'react';
 import { usePosts } from '../hooks/usePosts';
 import { Layout } from '../components/Layout/layout';
 import { PostPreview } from '../components/PostPreview/post-preview';
+import { SEO } from '../components/Seo/seo';
 
 import { Container, Header } from '../page-styles/blog.styles';
 
-const BlogPage = () => {
+const BlogPage = ({ location }) => {
   const posts = usePosts().reverse();
   return (
     <Layout>
+      <SEO title={'Blog'} slug={location.pathname} />
       <Container>
         <Header>
           <h1>Blog</h1>

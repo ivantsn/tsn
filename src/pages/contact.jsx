@@ -1,11 +1,14 @@
 import React from 'react';
+
 import { Layout } from '../components/Layout/layout';
+import { SEO } from '../components/Seo/seo';
 
 import { Container } from '../page-styles/contact.styles';
 
-const ContactPage = () => {
+const ContactPage = ({ location }) => {
   return (
     <Layout>
+      <SEO title={'Contact'} slug={location.pathname} />
       <Container>
         <h1>Get in touch</h1>
         <p>

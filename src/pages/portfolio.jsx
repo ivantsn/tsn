@@ -3,15 +3,15 @@ import React from 'react';
 import { Layout } from '../components/Layout/layout';
 import { ProjectPreview } from '../components/ProjectPreview/project-preview';
 import { useProjects } from '../hooks/useProjects';
-import { SEO } from '../components/Seo/Seo';
+import { SEO } from '../components/Seo/seo';
 
 import { Container, Header } from '../page-styles/portfolio.styles';
 
-const PortfolioPage = () => {
+const PortfolioPage = ({ location }) => {
   const projects = useProjects();
   return (
     <Layout>
-      <SEO />
+      <SEO title={'Portfolio'} slug={location.pathname} />
       <Container>
         <Header>
           <h1>Portfolio</h1>
