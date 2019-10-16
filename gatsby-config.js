@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
     'gatsby-plugin-sitemap',
@@ -99,6 +100,12 @@ module.exports = {
             type: 'image/png',
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'G-LWPR38LPKM',
       },
     },
   ],
