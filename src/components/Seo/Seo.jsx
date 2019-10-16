@@ -6,6 +6,7 @@ import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 export const SEO = ({ description, lang, meta, title, slug, isPost }) => {
   const siteMetadata = useSiteMetadata();
 
+  const metaTitle = title || siteMetadata.title;
   const metaDescription = description || siteMetadata.description;
   const url = `${siteMetadata.siteUrl}${slug}`;
 
@@ -14,7 +15,7 @@ export const SEO = ({ description, lang, meta, title, slug, isPost }) => {
       htmlAttributes={{
         lang,
       }}
-      title={title || siteMetadata.title}
+      title={metaTitle}
       titleTemplate={`%s • Ivan Tusnolobov`}
       meta={[
         {
@@ -27,7 +28,7 @@ export const SEO = ({ description, lang, meta, title, slug, isPost }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:url`,
@@ -63,7 +64,7 @@ export const SEO = ({ description, lang, meta, title, slug, isPost }) => {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
