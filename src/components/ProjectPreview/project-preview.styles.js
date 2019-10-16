@@ -14,7 +14,7 @@ export const Container = styled.section`
 
 export const Preview = styled.img`
   grid-column: 1/3;
-  grid-row: 2/3;
+  grid-row: 1/2;
 
   width: 100%;
 
@@ -28,7 +28,7 @@ export const Preview = styled.img`
 
 export const Header = styled.header`
   grid-column: 1/3;
-  grid-row: 1/2;
+  grid-row: 2/2;
 
   @media (${({ theme }) => theme.breakPoints.medium.query}) {
     grid-row: 1/2;
@@ -37,7 +37,7 @@ export const Header = styled.header`
 `;
 
 export const Title = styled.h3`
-  margin-top: -0.8rem;
+  margin-top: 0;
 `;
 
 export const Role = styled.small`
