@@ -47,3 +47,25 @@ export const Meta = styled.small`
   background-color: ${({ theme }) => theme.colors.lightBlue};
   border-radius: 0.2rem;
 `;
+
+export const StyledLink = styled.a`
+  padding: 0.8rem 2.4rem;
+
+  text-align: center;
+  color: ${({ theme }) => theme.colors.darkBlue};
+  background-color: ${({ theme }) => theme.colors.pleasantYellow};
+  border-radius: 0.4rem;
+
+  & i {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    display: inline-block;
+    transform: translate(0.8rem, -0.1rem);
+  }
+
+  &:after {
+    background-color: transparent;
+  }
+`;

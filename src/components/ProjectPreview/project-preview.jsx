@@ -6,6 +6,7 @@ import {
   Info,
   Title,
   Meta,
+  StyledLink,
 } from './project-preview.styles';
 
 export const ProjectPreview = ({
@@ -18,9 +19,9 @@ export const ProjectPreview = ({
         <Title>{title}</Title>
         <Meta>{`Role: ${role}`}</Meta>
         <p>{description}</p>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          {linkText}
-        </a>
+        <StyledLink href={link} target="_blank" rel="noopener noreferrer">
+          {linkText} <i>⇻</i>
+        </StyledLink>
       </Info>
     </Container>
   );
