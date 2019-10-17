@@ -133,10 +133,6 @@ export const GlobalStyles = theme => css`
 
   p {
     margin-bottom: 1.25em;
-    &::selection {
-      color: ${theme.colors.darkBlue};
-      background: ${theme.colors.pleasantYellow};
-    }
   }
 
   small {
