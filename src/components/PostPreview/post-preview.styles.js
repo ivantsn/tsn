@@ -4,6 +4,12 @@ export const Container = styled.section`
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
+
+  & a {
+    &:after {
+      display: none;
+    }
+  }
 `;
 
 export const Title = styled.h3`
@@ -11,7 +17,6 @@ export const Title = styled.h3`
 `;
 
 export const Metadata = styled.small`
-  margin-top: 0.8rem;
   opacity: 0.8;
 `;
 

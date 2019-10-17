@@ -1,4 +1,5 @@
 export const theme = {
+  contentWidth: 578,
   breakPoints: {
     small: {
       number: 415,
@@ -25,8 +26,8 @@ export const theme = {
     monospace: 'monospace',
   },
   lineHeights: {
-    text: 1.45,
-    heading: 1.15,
+    text: 1.6,
+    heading: 1.2,
   },
   fontWeights: {
     heading: 900,

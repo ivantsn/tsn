@@ -103,7 +103,7 @@ export const GlobalStyles = theme => css`
   h3,
   h4,
   h5 {
-    margin: 2.75rem 0 1rem;
+    margin: 4.75rem 0 1rem;
 
     line-height: ${theme.lineHeights.heading};
     font-family: ${theme.fonts.sans};

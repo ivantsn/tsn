@@ -10,7 +10,7 @@ export const Container = styled.article`
     'info';
 
   @media (${({ theme }) => theme.breakPoints.medium.query}) {
-    grid-template-columns: 32rem 1fr;
+    grid-template-columns: 50% 1fr;
     grid-template-rows: 1fr;
     gap: 2.4rem;
     grid-template-areas:
