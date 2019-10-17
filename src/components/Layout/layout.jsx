@@ -10,6 +10,7 @@ import { Footer } from '../Footer/footer';
 
 import { GlobalStyles, Container, Content } from './layout.styles';
 import 'typeface-fredoka-one';
+import 'typeface-nunito';
 import 'typeface-ibm-plex-serif';
 
 export const Layout = ({ children }) => (

@@ -20,7 +20,7 @@ export const theme = {
     pleasantYellowShadow: '#ccb866',
   },
   fonts: {
-    sans: 'Fredoka One',
+    sans: 'Nunito',
     serif: 'IBM Plex Serif, serif',
     monospace: 'monospace',
   },
@@ -29,7 +29,7 @@ export const theme = {
     heading: 1.15,
   },
   fontWeights: {
-    heading: 400,
+    heading: 900,
     text: 500,
     links: 600,
   },

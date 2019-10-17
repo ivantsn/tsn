@@ -12709,6 +12709,11 @@ typeface-ibm-plex-serif@^0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-ibm-plex-serif/-/typeface-ibm-plex-serif-0.0.75.tgz#7f93b410c712ba86c508f5d4727649a9c404ddcf"
   integrity sha512-pic/O3Z8wKjik6Tnin5KaiE+mFIAOI5Jn4EiF/FtxR42Fsmo6ZRWjJQN71FWXIWK4Miiu/UjhsFvJScpf2F2sw==
 
+typeface-nunito@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-0.0.72.tgz#152e7b8fc35452bacffc1313f322cbbd8034fc30"
+  integrity sha512-id43vYQiM9emQ6sbysLDRp8fb39Dk5yW/q6uSPHJnE1XVDSfrxYWFg/YiSoiaK+kO7wbuWb2HSjCAfH96Mabvg==
+
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
