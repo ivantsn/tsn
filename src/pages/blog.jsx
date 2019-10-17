@@ -8,7 +8,7 @@ import { SEO } from '../components/Seo/seo';
 import { Container, Header } from '../page-styles/blog.styles';
 
 const BlogPage = ({ location }) => {
-  const posts = usePosts().reverse();
+  const posts = usePosts();
   return (
     <Layout>
       <SEO title={'Blog'} slug={location.pathname} />
