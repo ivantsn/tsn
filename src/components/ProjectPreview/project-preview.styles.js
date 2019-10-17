@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Img from 'gatsby-image';
 
 export const Container = styled.article`
   display: grid;
@@ -19,7 +20,13 @@ export const Container = styled.article`
   }
 `;
 
-export const Preview = styled.img`
+export const Preview = styled(Img)`
+  grid-area: preview;
+
+  width: 100%;
+  border-radius: 0.4rem;
+`;
+export const PreviewSvg = styled.img`
   grid-area: preview;
 
   width: 100%;

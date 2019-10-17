@@ -1,0 +1,26 @@
+[
+  {
+    "title": "tusnolobov.com",
+    "role": "Design & Development",
+    "preview": "./images/tusnolobov.com.svg",
+    "description": "My personal site and portfolio",
+    "link": "https://github.com/tusnolobov/tusnolobov.com",
+    "linkText": "Source Code"
+  },
+  {
+    "title": "Genit",
+    "role": "Design & Development",
+    "preview": "./images/genit.svg",
+    "description": "Password generator built with Vanilla JS",
+    "link": "https://genit.netlify.com/",
+    "linkText": "Take a look"
+  },
+  {
+    "title": "WearService",
+    "role": "Design",
+    "preview": "./images/wear-service.png",
+    "description": "Website design for a company that produces wear-resistant parts for construction machinery.",
+    "link": "https://www.wearservice.ru/",
+    "linkText": "Take a look"
+  }
+]

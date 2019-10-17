@@ -3,21 +3,26 @@ import { useStaticQuery, graphql } from 'gatsby';
 export const useProjects = () => {
   const data = useStaticQuery(graphql`
     {
-      allPortfolioJson(sort: { order: DESC, fields: order }) {
+      allProjectsJson {
         nodes {
-          title
-          role
-          link
-          linkText
-          id
-          description
           preview {
+            sharp: childImageSharp {
+              fluid(maxWidth: 800, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
             publicURL
           }
+          title
+          role
+          description
+          id
+          linkText
+          link
         }
       }
     }
   `);
 
-  return data.allPortfolioJson.nodes;
+  return data.allProjectsJson.nodes;
 };
