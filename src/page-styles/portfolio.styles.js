@@ -2,14 +2,14 @@ import styled from '@emotion/styled';
 
 export const Container = styled.section`
   display: grid;
-  gap: 4rem;
+  gap: 4em;
 
-  @media (${({ theme }) => theme.breakPoints.small.query}) {
-    gap: 5.2rem;
-  }
-  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+  /* @media (${({ theme }) => theme.breakPoints.small.query}) {
     gap: 6.4rem;
   }
+  @media (${({ theme }) => theme.breakPoints.medium.query}) {
+    gap: 7.2rem;
+  } */
 `;
 
 export const Header = styled.header`

@@ -6,7 +6,7 @@ import { formatDate } from '../../utils/helpers';
 import { Layout } from '../../components/Layout/layout';
 import { SEO } from '../../components/Seo/seo';
 
-import { Container, Header } from './post.styles';
+import { Container, Header, Title } from './post.styles';
 
 export const query = graphql`
   query($slug: String!) {
@@ -33,7 +33,7 @@ const PostTemplate = ({ data: { mdx: post } }) => {
       />
       <Container>
         <Header>
-          <h1>{post.frontmatter.title}</h1>
+          <Title>{post.frontmatter.title}</Title>
           <small>
             {formatDate(post.frontmatter.date)} | {post.timeToRead} mins to read
           </small>

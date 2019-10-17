@@ -8,5 +8,5 @@ export const Container = styled.footer`
   justify-content: space-between;
 
   width: 100%;
-  padding: 0.8rem 0;
+  padding: 16px 0;
 `;

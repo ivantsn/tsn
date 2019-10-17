@@ -1,5 +1,5 @@
 export const theme = {
-  contentWidth: 578,
+  contentWidth: 640,
   breakPoints: {
     small: {
       number: 415,

@@ -49,6 +49,8 @@ export const GlobalStyles = theme => css`
     font-size: 10px;
 
     color: ${theme.colors.lightBlue};
+
+    background-color: ${theme.colors.darkBlue};
   }
 
   body {
@@ -103,7 +105,9 @@ export const GlobalStyles = theme => css`
   h3,
   h4,
   h5 {
-    margin: 4.75rem 0 1rem;
+    margin: 0;
+    margin-top: 1.6em;
+    margin-bottom: 0.4em;
 
     line-height: ${theme.lineHeights.heading};
     font-family: ${theme.fonts.sans};
@@ -112,38 +116,33 @@ export const GlobalStyles = theme => css`
 
   h1 {
     margin-top: 0;
-    font-size: 3.052em;
+    font-size: 2.827em;
   }
 
   h2 {
-    font-size: 2.441em;
+    font-size: 1.999em;
   }
 
   h3 {
-    font-size: 1.953em;
-  }
-
-  h4 {
-    font-size: 1.563em;
-  }
-
-  h5 {
-    font-size: 1.25em;
+    font-size: 1.414em;
   }
 
   p {
-    margin-bottom: 1.25em;
+    margin-top: 0;
+    margin-bottom: 1.6em;
   }
 
   small {
+    margin-bottom: 0.8em;
     font-size: 0.75em;
   }
 
   blockquote {
     margin: 0;
-    padding: 0.4rem 3.2rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 0.4rem;
+    margin-bottom: 1.6em;
+    padding-left: 2em;
+
+    font-style: italic;
   }
 
   pre,
@@ -152,12 +151,14 @@ export const GlobalStyles = theme => css`
   }
 
   hr {
+    margin: 2.4em 0;
     border: none;
     border: 1px solid ${theme.colors.lightBlue};
   }
 
   .gatsby-highlight {
-    margin: 2.75rem 0 1rem;
+    margin-top: 2.4em;
+    margin-bottom: 2.4em;
   }
 
   ::selection {
