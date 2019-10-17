@@ -1,5 +1,6 @@
 {
   "title": "Genit",
+  "order": 5,
   "role": "Design & Development",
   "preview": "./images/genit/preview.svg",
   "description": "Password generator built with Vanilla JS",
