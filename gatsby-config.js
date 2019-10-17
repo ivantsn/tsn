@@ -22,6 +22,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-emotion',
     'gatsby-transformer-sharp',
     'gatsby-transformer-json',
