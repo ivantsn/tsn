@@ -17,18 +17,24 @@ const IndexPage = ({ location }) => (
       <div>
         <h1>Hello</h1>
         <p>
-          My name is Ivan and I’m a disigner and frontend developer based in
-          Moscow.
+          My&nbsp;name is&nbsp;Ivan Tushnolobov. I&rsquo;m a&nbsp;developer and
+          designer from Moscow, Russia.
         </p>
-        <p>Interested in working together? Reach me at</p>
-
-        <a
-          href="mailto:ivan.tusnolobov@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ivan.tusnolobov[at]gmail.com
-        </a>
+        <p>
+          I&rsquo;m currently looking for a&nbsp;full-time developer job and
+          am&nbsp;not available for freelance work. But&nbsp;I&rsquo;m always
+          happy to&nbsp;contribute to&nbsp;some cool open-source project.
+        </p>
+        <p>
+          Interested in&nbsp;working together? Reach me&nbsp;at&nbsp;{' '}
+          <a
+            href="mailto:ivan.tusnolobov@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ivan.tusnolobov[at]gmail.com
+          </a>
+        </p>
       </div>
     </Container>
   </Layout>

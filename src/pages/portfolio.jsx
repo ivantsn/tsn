@@ -16,12 +16,7 @@ const PortfolioPage = ({ location }) => {
         <Header>
           <h1>Portfolio</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sed
-            quis itaque illo molestiae alias accusamus animi voluptatum
-            reiciendis beatae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ut.
+            Check out some of my design and web software development projects.
           </p>
         </Header>
         {projects.map(project => (
