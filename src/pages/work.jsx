@@ -11,13 +11,15 @@ const WorkPage = ({ location }) => {
   const projects = useProjects();
   return (
     <Layout>
-      <SEO title={'Work'} slug={location.pathname} />
+      <SEO
+        title={'Work'}
+        description={`Ivan's design and web development projects`}
+        slug={location.pathname}
+      />
       <Container>
         <Header>
           <h1>Work</h1>
-          <p>
-            Check out some of my design and web software development projects.
-          </p>
+          <p>Check out some of my design and web development projects.</p>
         </Header>
         {projects.map(project => (
           <ProjectPreview key={project.id} project={project} />
