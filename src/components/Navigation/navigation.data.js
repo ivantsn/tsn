@@ -5,12 +5,12 @@ export const navigationData = {
       label: 'About',
     },
     {
-      href: '/portfolio/',
-      label: 'Portfolio',
+      href: '/work/',
+      label: 'Work',
     },
     {
-      href: '/blog/',
-      label: 'Blog',
+      href: '/writing/',
+      label: 'Writing',
     },
     {
       href: '/contact/',

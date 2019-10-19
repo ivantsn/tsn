@@ -5,16 +5,16 @@ import { ProjectPreview } from '../components/ProjectPreview/project-preview';
 import { useProjects } from '../hooks/useProjects';
 import { SEO } from '../components/Seo/seo';
 
-import { Container, Header } from '../page-styles/portfolio.styles';
+import { Container, Header } from '../page-styles/work.styles';
 
-const PortfolioPage = ({ location }) => {
+const WorkPage = ({ location }) => {
   const projects = useProjects();
   return (
     <Layout>
-      <SEO title={'Portfolio'} slug={location.pathname} />
+      <SEO title={'Work'} slug={location.pathname} />
       <Container>
         <Header>
-          <h1>Portfolio</h1>
+          <h1>Work</h1>
           <p>
             Check out some of my design and web software development projects.
           </p>
@@ -27,4 +27,4 @@ const PortfolioPage = ({ location }) => {
   );
 };
 
-export default PortfolioPage;
+export default WorkPage;
