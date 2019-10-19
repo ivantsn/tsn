@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { Container } from './footer.styles';
+import { Container, SmallStyled } from './footer.styles';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <Container>
-      <small>© {currentYear} Ivan Tusnolobov All Rights Reserved</small>
-      <small>
+      <SmallStyled>
+        © {currentYear} Ivan Tusnolobov All Rights Reserved
+      </SmallStyled>
+      <SmallStyled>
         Built with{' '}
         <a
           href="https://www.gatsbyjs.org/"
@@ -24,7 +26,7 @@ export const Footer = () => {
         >
           Netlify
         </a>
-      </small>
+      </SmallStyled>
     </Container>
   );
 };

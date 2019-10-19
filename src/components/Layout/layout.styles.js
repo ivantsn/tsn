@@ -136,7 +136,6 @@ export const GlobalStyles = theme => css`
   }
 
   small {
-    margin-bottom: 0.8em;
     font-size: 0.75em;
   }
 

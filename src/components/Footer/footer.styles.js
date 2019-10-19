@@ -10,3 +10,7 @@ export const Container = styled.footer`
   width: 100%;
   padding: 16px 0;
 `;
+
+export const SmallStyled = styled.small`
+  margin-bottom: 0;
+`;

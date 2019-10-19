@@ -50,7 +50,7 @@ export const Title = styled.h2`
 
 export const Meta = styled.small`
   padding: 0.2rem 1rem;
-
+  margin-bottom: calc(1em / 0.75 * 1.5);
   color: ${({ theme }) => theme.colors.darkBlue};
   background-color: ${({ theme }) => theme.colors.lightBlue};
   border-radius: 0.2rem;

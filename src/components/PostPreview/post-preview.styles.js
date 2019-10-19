@@ -19,6 +19,7 @@ export const Title = styled.h2`
 
 export const Metadata = styled.small`
   opacity: 0.8;
+  margin-bottom: calc(1em / 0.75 * 1.5);
 `;
 
 export const Spoiler = styled.p`
