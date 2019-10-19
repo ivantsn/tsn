@@ -3,7 +3,7 @@
     "title": "tusnolobov.com",
     "role": "Design & Development",
     "preview": "./images/tusnolobov.com.svg",
-    "description": "My personal site and portfolio",
+    "description": "My personal site and portfolio built with Gatsby.js and some other modern web dev tools. It looks great in all screen sizes.",
     "link": "https://github.com/tusnolobov/tusnolobov.com",
     "linkText": "Source Code"
   },
@@ -11,7 +11,7 @@
     "title": "Genit",
     "role": "Design & Development",
     "preview": "./images/genit.svg",
-    "description": "Password generator built with Vanilla JS",
+    "description": "Model View Controller password generator app in plain JavaScript.",
     "link": "https://genit.netlify.com/",
     "linkText": "Take a look"
   },
