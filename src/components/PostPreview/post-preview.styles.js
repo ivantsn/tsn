@@ -14,7 +14,7 @@ export const Container = styled.section`
 
 export const Title = styled.h2`
   margin-top: 0;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 `;
 
 export const Metadata = styled.small`

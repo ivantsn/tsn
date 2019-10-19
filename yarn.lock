@@ -12829,11 +12829,6 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-fredoka-one@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-fredoka-one/-/typeface-fredoka-one-0.0.72.tgz#994d15559b968ae28f12d83f4743ce5bb8f8b2d4"
-  integrity sha512-meLEl2OOZwbwgqVYETIhy8mwI4u+J1wgVA59VMbTtmXE8iTgY+EmwJjTe9HvD/Vzuk2nn6WUFA4de2twLFN6Tg==
-
 typeface-ibm-plex-serif@^0.0.75:
   version "0.0.75"
   resolved "https://registry.yarnpkg.com/typeface-ibm-plex-serif/-/typeface-ibm-plex-serif-0.0.75.tgz#7f93b410c712ba86c508f5d4727649a9c404ddcf"

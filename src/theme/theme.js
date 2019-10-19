@@ -1,5 +1,5 @@
 export const theme = {
-  contentWidth: 640,
+  contentWidth: 600,
   breakPoints: {
     small: {
       number: 415,
@@ -31,7 +31,7 @@ export const theme = {
   },
   fontWeights: {
     heading: 900,
-    text: 500,
-    links: 600,
+    text: 400,
+    links: 500,
   },
 };

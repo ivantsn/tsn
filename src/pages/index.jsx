@@ -17,7 +17,7 @@ const IndexPage = ({ location }) => (
       <div>
         <h1>Hello</h1>
         <p>
-          My&nbsp;name is&nbsp;Ivan Tushnolobov. I&rsquo;m a&nbsp;developer and
+          My&nbsp;name is&nbsp;Ivan Tusnolobov. I&rsquo;m a&nbsp;developer and
           designer from Moscow, Russia.
         </p>
         <p>

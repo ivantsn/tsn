@@ -43,7 +43,8 @@ export const Info = styled.section`
 `;
 
 export const Title = styled.h2`
-  margin-top: 0;
+  margin-top: -0.25em;
+  margin-bottom: 0.2em;
   word-break: break-word;
 `;
 

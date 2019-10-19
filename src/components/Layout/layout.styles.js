@@ -76,6 +76,7 @@ export const GlobalStyles = theme => css`
   a {
     position: relative;
     text-decoration: none;
+    font-weight: ${theme.fontWeights.links};
     color: ${theme.colors.pleasantYellow};
 
     &:after {
@@ -105,10 +106,6 @@ export const GlobalStyles = theme => css`
   h3,
   h4,
   h5 {
-    margin: 0;
-    margin-top: 1.6em;
-    margin-bottom: 0.4em;
-
     line-height: ${theme.lineHeights.heading};
     font-family: ${theme.fonts.sans};
     font-weight: ${theme.fontWeights.heading};
@@ -116,20 +113,26 @@ export const GlobalStyles = theme => css`
 
   h1 {
     margin-top: 0;
+    margin-bottom: calc(1em / 2.827 * 1.5);
     font-size: 2.827em;
   }
 
   h2 {
+    margin-top: calc(1em / 1.999 * 4.5);
+    margin-bottom: calc(1em / 1.999 * 1.5);
     font-size: 1.999em;
   }
 
   h3 {
+    margin-top: calc(1em / 1.414 * 4.5);
+    margin-bottom: calc(1em / 1.414 * 1.5);
     font-size: 1.414em;
   }
 
   p {
     margin-top: 0;
-    margin-bottom: 1.6em;
+    margin-bottom: 1em;
+    hanging-punctuation: first;
   }
 
   small {
@@ -139,9 +142,10 @@ export const GlobalStyles = theme => css`
 
   blockquote {
     margin: 0;
-    margin-bottom: 1.6em;
+    margin-top: 2.4em;
+    margin-bottom: 2.4em;
     padding-left: 2em;
-
+    letter-spacing: 0.02em;
     font-style: italic;
   }
 

@@ -10,9 +10,7 @@ export const Container = styled.article`
   }
 `;
 
-export const Header = styled.header`
-  margin-bottom: 2.4em;
-`;
+export const Header = styled.header``;
 
 export const Title = styled.h1`
   margin-bottom: 0em;
