@@ -131,7 +131,7 @@ export const GlobalStyles = theme => css`
 
   p {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     hanging-punctuation: first;
   }
 
