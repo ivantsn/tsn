@@ -22,5 +22,13 @@
     "description": "Website design for a company that produces wear-resistant parts for construction machinery.",
     "link": "https://www.wearservice.ru/",
     "linkText": "Take a look"
+  },
+  {
+    "title": "Tradica-K",
+    "role": "Design",
+    "preview": "./images/tradicia-k.png",
+    "description": "Made the second version of the design for the company, which sells and supplies equipment and spare parts for construction equipment throughout Russia.",
+    "link": "https://www.tradicia-k.ru/about/",
+    "linkText": "Take a look"
   }
 ]
