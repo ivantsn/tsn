@@ -21,9 +21,7 @@ const IndexPage = ({ location }) => (
           designer from Moscow, Russia.
         </p>
         <p>
-          I&rsquo;m currently looking for a&nbsp;full-time developer job and
-          am&nbsp;not available for freelance work. But&nbsp;I&rsquo;m always
-          happy to&nbsp;contribute to&nbsp;some cool open-source project.
+          I&rsquo;m currently looking for a&nbsp;full-time developer job and always happy to&nbsp;contribute to&nbsp;open-source projects.
         </p>
         <p>
           Interested in&nbsp;working together? Reach me&nbsp;at&nbsp;{' '}
